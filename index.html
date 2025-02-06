@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    
+      
+        <header>
+          <h1 id="heading">Weather App</h1>
+          <img id="logo" src="./images/weather02-512.webp" alt="Weather image logo" />
+        </header>
+        <div id="search">
+        <form>
+          <input type="search" id="searchtext" placeholder="Enter Your City Name"/>
+          
+          <button type="submit" id="searchbutton">Get Weather</button><br />
+        </form>
+       
+       </div>
+       <main class="maincontent">
+          <div id="errordiv"></div>
+          <h2 id="temp"  class="items"></h2>
+          <br />
+          <h2 id="main" class="weather items"></h2>
+          <br />
+          <h2 id="city" class="items"></h2>
+          <br />
+          <h2 id="humidity" class="items"></h2>
+          <br />
+          <h2 id="windspeed" class="items"></h2>
+          <br />
+          <h2 id="visibility"class="items"></h2>
+          
+        </main>
+        <footer>
+          <p>&copy; Junaid Ahmad Khan</p>
+        </footer>
+        
+    
+
+    <script src="index.js"></script>
+  </body>
+</html>

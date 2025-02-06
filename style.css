@@ -1,0 +1,362 @@
+body{
+  background-image: url(./images/wallhaven-wyppy7.jpg);
+  background-size: 100vh 100% ;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0px;
+  
+}
+
+
+#search{
+  text-align: center;
+}
+
+header{
+  display: flex;
+  justify-content: center;  
+}
+
+
+img{
+  display: flex;
+  justify-content: end; 
+  margin: 40px 300px 40px 0px;
+  
+}
+
+#heading{
+  
+  margin: auto;
+  padding: 30px 30px 20px 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 300px;
+  margin-right: 20px;
+  color: white;
+  font-size: 60px;
+
+}
+.items{
+  display: inline-block;
+  margin: 15px;
+  margin-right: 50px;
+  color: white;
+  font-size: x-large;
+
+}
+#logo{
+  height: 100px;
+}
+#searchtext{
+  border-radius: 5px;
+  width: 280px;
+  height: 38px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  margin-left: 30px;
+  color: #333;
+  font-size: 17px;
+}
+#searchtext:hover{
+  border: 4px solid hsl(240, 100%, 67%);
+}
+#searchtext:focus{
+  outline: none;
+  border: 2px solid hsl(240, 100%, 67%);
+ 
+}
+
+#searchbutton{
+  border-radius: 5px;
+  height: 35px;
+  width: 150px;
+  color: white;
+  background-color: hsl(240, 100%, 67%);
+  font-size: 18px;
+
+
+}
+#searchbutton:focus{
+  
+  border: 2px solid hsl(240, 100%, 67%);
+
+}
+
+#searchbutton:hover{
+  background-color: hsl(240, 51%, 50%);
+}
+
+
+.maincontent{
+  height: 425px;
+  text-align: center;
+  margin: 30px;
+
+ 
+}
+#errordiv{
+  display: flex;
+  justify-content: center;
+}
+#error{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 550px;
+  background-color: rgb(195, 72, 72);
+  color: rgb(0, 0, 0);
+  font-size: 1.2em;
+  border-radius: 20px;
+  padding-bottom: 30px;
+  margin-left: 30px;
+    
+}
+
+
+.weather{
+  color: white;
+}
+#temp{
+  font-family: "Lilita One";
+  font-size: 65px;
+}
+
+
+
+p{
+  font-size: larger;
+  font-family: "Lilita One"
+}
+
+footer{  
+ 
+
+  color: white;
+}
+footer>p{
+  margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  body {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  #heading {
+    padding: 5px;
+    margin: 30px 20px 20px 50px;
+    font-size: 3rem;
+  }
+
+  #logo {
+    height: 50px;
+    margin: 20px 10px 0 0;
+  }
+
+  #searchtext {
+    width: 230px;
+    height: 38px;
+    padding-left: 25px;
+    margin-right: 15px;
+    margin-left: 50px;
+    margin-bottom: 25px;
+    
+  }
+
+  #searchbutton {
+    height: 33px;
+    width: 125px;
+    font-size: 16px;
+  }
+
+  .maincontent {
+    height: 66vh;
+    text-align: center;
+    margin: 30px;
+  }
+
+  .items {
+    margin: 15px;
+    color: white;
+    font-size: x-large;
+  }
+}
+
+/* Responsive Design for Screen Width <= 480px */
+@media (max-width: 480px) {
+  body {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  #heading {
+    padding: 5px;
+    margin: 15px 20px 20px 50px;
+    font-size: 2.2rem;
+  }
+
+  #logo {
+    height: 50px;
+    margin: 15px 10px 0 0;
+  }
+
+  #searchtext {
+    width: 240px;
+    height: 35px;
+    padding-left: 40px;
+    margin: 20px 40px 20px 30px;
+    color: #333;
+    font-size: 17px;
+    
+  }
+
+  #searchbutton {
+    height: 30px;
+    width: 125px;
+    font-size: 16px;
+  }
+
+  .maincontent {
+    height: 66vh;
+    text-align: center;
+    margin: 50px;
+  }
+
+  .items {
+    margin: 15px;
+    color: white;
+    font-size: x-large;
+  }
+
+  #error {
+    width: 100%;
+    max-width: 400px;
+    font-size: 1em;
+  }
+}
+ /* @media (max-width: 1200px)
+  {
+    body{
+      width: 100%;
+      min-height: 100vh;
+    }
+    #heading{
+  
+      
+      padding: 5px;
+      margin: 30px 20px 20px 50px;
+      font-size: 3rem;
+    
+    }
+    #logo{
+      height: 50px;
+      margin: 20px 10px 0 0;
+    }
+    #searchtext{
+      border-radius: 5px;
+      width: 230px;
+      height: 38px;
+      padding-left: 25px;
+      box-sizing: border-box;
+      margin-right: 0px;
+      margin-left: 50px;
+      margin-bottom: 25px;
+      margin: 20px 30px 20px 30px;
+      color: #333;
+      font-size: 17px;
+    }
+    #searchbutton{
+      height: 33px;
+      width: 125px;
+      font-size: 16px;
+    }
+    .maincontent{
+      height: 66vh;
+      text-align: center;
+      margin: 30px;
+     
+    }
+    .items{
+      
+      margin: 15px;
+      margin-right: 50px;
+      color: white;
+      font-size: x-large;
+    
+    }
+  
+  
+  
+  }
+
+  
+ @media (max-width: 480px)
+{
+    body{
+      width: 100%;
+      min-height: 100vh;
+      
+    }
+    #heading{
+  
+      padding: 5px;
+      margin: 15px 20px 20px 50px;
+      font-size: 2.2rem;
+    
+    }
+    #logo{
+      height: 50px;
+      margin: 15px 10px 0 0;
+    }
+    #searchtext{
+      border-radius: 5px;
+      width: 240px;
+      height: 35px;
+      padding-left: 40px;
+      margin: 20px 30px 20px 30px;
+      color: #333;
+      font-size: 17px;
+    }
+    #searchbutton{
+      height: 30px;
+      width: 125px;
+      font-size: 16px;
+    }
+    .maincontent{
+      height: 66vh;
+      text-align: center;
+      margin: 50px;
+     
+    }
+    .items{
+      
+      margin: 15px;
+      margin-right: 50px;
+      color: white;
+      font-size: x-large;
+    
+    }
+    #error{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      height: 60px;
+      width: 400px;
+      background-color: rgb(195, 72, 72);
+      color: rgb(0, 0, 0);
+      font-size: 1em;
+      border-radius: 20px;
+      padding-bottom: 30px;
+      margin-left: 10px;
+      overflow: hidden;
+        
+    }
+  
+  
+  } */
